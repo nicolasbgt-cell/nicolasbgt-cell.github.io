@@ -1,11 +1,16 @@
+:root {
+    color-scheme: light dark;
+    --bg-color: light-dark(#ffffff, #121212);
+    --text-color: light-dark(#333333, #f5f5f5);
+}
 h1 {
     text-align: center;
     line-height: 1.8;
-    color: black;
+    color: white;
 }
 p {
     text-align:justify;
-    color: black;
+    color: white;
 }
 h2 {
     text-decoration: underline;
