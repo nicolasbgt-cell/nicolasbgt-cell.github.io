@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    line-height: 1.8;
+    color: black;
+}
+p {
+    text-align:justify;
+    color: black;
+}
+h2 {
+    text-decoration: underline;
+}
