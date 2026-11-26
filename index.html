@@ -2,6 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<title>Etudiant et développeur</title>
 	</head>
@@ -11,6 +12,7 @@
 		</nav>
 		<header>
 			<h1>Créateur et étudiant en informatique à 42 </h1>
+			<p class="tagline">À la recherche d'une alternance.</p>
 			<p>Je suis Nicolas. Je viens de l’hôtellerie et j’ai changé de voie pour poursuivre ce qui me motive vraiment :
 			créer des choses avec le code.
 			Je suis actuellement étudiant à 42 Paris sur une formation en Python,
@@ -21,33 +23,73 @@
 			Je crois que les meilleurs constructeurs sont ceux qui ont vécu à l'extérieur du terminal.</p>
 		</header>
 		<main>
-			<section>
-				<h2>Projets du cursus 42</h2>
-				<h3>Projets en C</h3>
-				<ul>
-					<li><a href="curriculum/c_project/libft_fr.html">Libft: implémenter la librairie en C</a></li>
-					<li><a href="curriculum/c_project/printf_fr.html">Printf: implémenter la fonction "printf"</a></li>
-					<li><a href="curriculum/c_project/get_next_line_fr.html">Get Next Line: lire un fichier ligne par ligne avec un buffer</a></li>
-					<li><a href="curriculum/push_swap_fr.htlm">Push Swap: algorithme de trie entre deux piles</a></li>
-				</ul>
-				<h3>Projets en Python</h3>
-				<ul>
-					<li><a href="curriculum/c_project/piscine_python_fr.html">Piscine Python: apprendre les bases de Python</a></li>
-					<li><a href="curriculum/python_project/amazing_fr.html">A_maze_ing: algorithme de génération de labyrinthe et affichage en ASCII</a></li>
-					<li><a href="curriculum/python_project/pacman_fr.html">Pac-Man: reproduire le jeu Pac-Man</a></li>
-				</ul>
+			<section class="featured">
+				<h2>Projets en vedette</h2>
+				<div class="cards">
+					<article class="card">
+						<a href="curriculum/python_project/pacman_fr.html">
+							<img src="assets/display_PM.png" alt="Capture d'écran du jeu Pac-Man reproduit en code">
+							<h3>Pac-Man</h3>
+							<p>Le célèbre jeu d'arcade, que j'ai reproduit entièrement en code. Les fantômes, le score, les niveaux, tout est refait de zéro.</p>
+							<span class="card-link">Voir le projet</span>
+						</a>
+					</article>
+					<article class="card">
+						<a href="curriculum/python_project/amazing_fr.html">
+							<img src="assets/Amazing.png" alt="Capture d'écran d'un labyrinthe généré par le programme A_maze_ing">
+							<h3>A_maze_ing</h3>
+							<p>Un programme qui invente des labyrinthes tout seul, différents à chaque fois, et les dessine à l'écran.</p>
+							<span class="card-link">Voir le projet</span>
+						</a>
+					</article>
+					<article class="card">
+						<a href="personal_projects/rubiks_fr.html">
+							<img src="assets/display_RB.png" alt="Capture d'écran du Rubik's cube en 2D">
+							<h3>Rubik's</h3>
+							<p>Un Rubik's cube en 2D que l'on peut manipuler sur l'écran, programmé en langage C.</p>
+							<span class="card-link">Voir le projet</span>
+						</a>
+					</article>
+				</div>
 			</section>
-			<section>
-				<h2>Projets personnel</h2>
-				<h3>Projets en C</h3>
+			<section class="all-projects">
+				<h2>Tous les projets</h2>
+				<section>
+					<h2>Projets du cursus 42</h2>
+					<h3>Projets en C</h3>
+					<ul>
+						<li><a href="curriculum/c_project/libft_fr.html">Libft: implémenter la librairie en C</a></li>
+						<li><a href="curriculum/c_project/printf_fr.html">Printf: implémenter la fonction "printf"</a></li>
+						<li><a href="curriculum/c_project/get_next_line_fr.html">Get Next Line: lire un fichier ligne par ligne avec un buffer</a></li>
+						<li><a href="curriculum/push_swap_fr.htlm">Push Swap: algorithme de trie entre deux piles</a></li>
+					</ul>
+					<h3>Projets en Python</h3>
+					<ul>
+						<li><a href="curriculum/c_project/piscine_python_fr.html">Piscine Python: apprendre les bases de Python</a></li>
+						<li><a href="curriculum/python_project/amazing_fr.html">A_maze_ing: algorithme de génération de labyrinthe et affichage en ASCII</a></li>
+						<li><a href="curriculum/python_project/pacman_fr.html">Pac-Man: reproduire le jeu Pac-Man</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Projets personnel</h2>
+					<h3>Projets en C</h3>
+					<ul>
+						<li><a href="personal_projects/rubiks_fr.html">Rubik's: implémenter un rubik's cube en 2D</a></li>
+					</ul>
+					<h3>Projets en Python</h3>
+					<ul>
+						<li><a href="personal_projects/minicalculator_fr.html">Mini calculette: implémenter et afficher en tkinter</a></li>
+						<li><a href="personal_projects/to_be_root_fr.html">To_Be_Root: Jeu de role</a></li>
+						<li><a href="personal_projects/daily_digest_fr.html">Daily digest: </a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="contact">
+				<h2>Contact</h2>
 				<ul>
-					<li><a href="personal_projects/rubiks_fr.html">Rubik's: implémenter un rubik's cube en 2D</a></li>
-				</ul>
-				<h3>Projets en Python</h3>
-				<ul>
-					<li><a href="personal_projects/minicalculator_fr.html">Mini calculette: implémenter et afficher en tkinter</a></li>
-					<li><a href="personal_projects/to_be_root_fr.html">To_Be_Root: Jeu de role</a></li>
-					<li><a href="personal_projects/daily_digest_fr.html">Daily digest: </a></li>
+					<li>E-mail: <a href="mailto:nicolas.bgt@gmail.com">nicolas.bgt@gmail.com</a></li>
+					<li>GitHub: <a href="https://github.com/nicolasbgt-cell">https://github.com/nicolasbgt-cell</a></li>
+					<li>LinkedIn: <a href="https://www.linkedin.com/in/nicolasbgt42/">https://www.linkedin.com/in/nicolasbgt42/</a></li>
 				</ul>
 			</section>
 		</main>
